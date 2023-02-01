@@ -1,0 +1,89 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'MuseoModerno';
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  background-image: url("/static/Background.jpeg");
+  
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  
+  height: 100%; 
+  
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.bg-text {
+  color: rgb(42, 42, 42);
+  font-family: 'MuseoModerno';
+  font-weight: bold;
+  position: absolute;
+  top: 23%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+.wrong-upload {
+  color:rgb(42, 42, 42);
+  font-family: 'MuseoModerno';
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.form-text {
+  color: rgb(42, 42, 42);
+  font-family: 'MuseoModerno';
+  font-weight: bold;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 10px;
+  text-align: center;
+}
+
+.form {
+  color: rgb(42, 42, 42);
+  font-family: 'MuseoModerno';
+  font-weight: bold;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 10px;
+  text-align: center;
+}
+
+.info {
+  color:rgb(42, 42, 42);
+  font-family: 'MuseoModerno';
+  font-weight: lighter;
+  position: absolute;
+  top: 95%;
+  right: -40%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 10px;
+  text-align: right;
+}

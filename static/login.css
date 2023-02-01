@@ -1,0 +1,97 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'MuseoModerno';
+}
+  
+* {
+    box-sizing: border-box;
+}
+  
+.bg-image {
+    background-image: url("/static/Background.jpeg");
+    
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    
+    height: 100%; 
+    
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.bg-text {
+    color: rgb(42, 42, 42);
+    font-family: 'MuseoModerno';
+    font-weight: bold;
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+}
+  
+button {
+    background-color: rgb(42, 42, 42);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+  
+button:hover {
+    opacity: 0.8;
+}
+  
+.container {
+    padding: 16px;
+}
+  
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+.login-error {
+    color: rgb(42, 42, 42);
+    font-family: 'MuseoModerno';
+    font-weight: bold;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.info {
+    color:rgb(42, 42, 42);
+    font-family: 'MuseoModerno';
+    font-weight: lighter;
+    position: absolute;
+    top: 95%;
+    right: -40%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 10px;
+    text-align: right;
+}
+  
+@media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
