@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>FileUploadSite</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=MuseoModerno">
+  <link href="static/style.css" rel="stylesheet" type="text/css" />
+  
+</head>
+  
+<body>
+
+<div class="bg-image"></div>
+  
+<div class="bg-text">
+  {% if MessageUploadOk %}
+  <h1 style="font-size: 30px; color:rgb(0, 255, 179);">{{ MessageUploadOk }}</h1>
+  {% else %}
+  <h1 style="font-size: 30px;">Bubenmomente</h1>
+  {% endif %}
+</div>
+  
+<div class="form-text">
+  <p>Insert File</p>
+</div>
+
+<div class="form">
+  <form action="http://127.0.0.1:5000/upload" method="post" enctype="multipart/form-data">
+  <p><input type="file" accept=".jpg, .jpeg, .png, .heif, .gif, .mp4" name="file"></p>
+  <p><input type="submit" value="Upload"></p>
+  </form>
+</div>
+
+<div class="wrong-upload">
+  {% if MessageUploadNotOK %}
+  <p>{{ MessageUploadNotOK }}</p>
+  {% endif %}
+</div>
+
+<div class="wrong-upload">
+  {% if MessageUploadTooBig %}
+  <p>{{ MessageUploadTooBig }}</p>
+  {% endif %}
+</div>
+
+<div class="info">
+  <p>This Page is for private Use only</p>
+</div>
+  
+</body>
+  
+</html>
